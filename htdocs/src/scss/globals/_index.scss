@@ -1,0 +1,37 @@
+// This file is for importing global styled elements into the project. This
+// includes styling for links, typography, grids and structure, etc. Elements
+// should be placed in the elements folder.
+
+// This file is imported into the app.scss file.
+
+// =============================================================================
+// Project Typography
+// All Typography styling is the in the Typography sub-directory and broken into
+// small partials.
+// =============================================================================
+@import "typography/index";
+@import "form-control";
+@import "extend-vars";
+@import "global-classes";
+
+// Padding for the content below the fixed header.
+// Variables set in variables/index file. 
+.content {
+  @include breakpoint(small) {
+    padding-top: $header-height-mobile;
+  }
+
+  @include breakpoint(tablet) {
+    padding-top: $header-height-tablet;
+  }
+
+  @include breakpoint(desktop) {
+    padding-top: $header-height-desktop;
+  }
+}
+
+body.home .content {
+	@include breakpoint(desktop) {
+		padding-top: $header-height-home;
+	}
+}

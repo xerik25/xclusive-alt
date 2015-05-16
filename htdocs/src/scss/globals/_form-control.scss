@@ -1,0 +1,19 @@
+.form-control {
+	border-radius: 0px;
+	-webkit-appearance: none;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+.dropdown-arrow {
+	background: #fff url(../images/dropdown-arrow.png) right no-repeat;
+	background-size: contain;
+}
+
+.additional-field {
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+}

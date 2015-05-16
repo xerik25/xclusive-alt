@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <!-- build:css styles/app.min.css -->
+            <link rel="stylesheet" href="styles/framework.css">
+            <link rel="stylesheet" href="styles/app.css">
+        <!-- /build -->
+
+        <!-- build:js /scripts/head.min.js -->
+            <script src="scripts/modernizr.js"></script>
+            <!--<script src="scripts/polyfills.js"></script>
+            <script src="scripts/loader.js"></script>-->
+        <!-- /build -->
+
+    </head>
+    <body class="{{ page_name }}">
+        {{> header}}
+
+        <!-- Add your site or application content here -->
+        <div class="content">
+          {{> body }}
+        </div>
+
+
+        <!-- build:js /scripts/plugins.min.js -->
+            <script src="scripts/plugins.js"></script>
+        <!-- /build -->
+
+        <!-- build:js /scripts/main.min.js -->
+            <script src="scripts/main.js"></script>
+        <!-- /build -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        {{> footer }}
+    </body>
+</html>

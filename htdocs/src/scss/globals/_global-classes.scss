@@ -1,0 +1,65 @@
+.hideme {
+	opacity: 0;
+}
+
+.bg--gray {
+	background-color: #e2e2e2;
+}
+
+.bg--white {
+	background-color: #fff;
+}
+
+.bg--black {
+	background-color: #18181a;
+	color: white;
+}
+
+.margin--auto {
+	margin: 0 auto;
+}
+.box-shadow {
+	.content-img-primary {
+		display: block;
+	}
+	.content-img-secondary {
+		display: none;
+	}
+}
+.box-shadow:hover {
+	box-shadow: 4px 4px 5px 0px #858585;
+	-moz-box-shadow: 4px 4px 5px 0px #858585;
+	-webkit-box-shadow: 4px 4px 5px 0px #858585;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#858585')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#858585');
+
+	.content-img-primary {
+		display: none;
+	}
+	.content-img-secondary {
+		display: block;
+	}
+}
+
+hr {
+	border-top: 2px solid #eeeeee;
+}
+
+/*Adds padding to slides so that arrows don't hit content*/
+.carousel-inner .carousel--padding {
+padding-left: 40px;
+padding-right: 40px;
+}
+
+/*Hide dropdown divs for desktop view*/
+@include breakpoint(mobile) {
+	.hide-content-divs .divider {
+		display: none;
+	}
+}
+
+.modal-content {
+	border-radius: 0px;
+}

@@ -1,0 +1,23 @@
+{
+  "query": "automation",
+  "results": 100,
+  "resultPage": 1,
+  "resultsSorting": "relevancy",
+  "searchResults": [
+    {
+      "title": "Result Title 1",
+      "description": "Result Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo dolor. Proin nec placerat ligula. Praesent vitae ligula eu tortor euismod volutpat nec in orci. Morbi dictum quam vel mi tempus efficitur. Aenean id tellus tempus, vehicula neque eu, bibendum ipsum",
+      "link": "/result/link.html"
+    },
+    {
+      "title": "Result Title 2",
+      "description": "Result Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo dolor. Proin nec placerat ligula. Praesent vitae ligula eu tortor euismod volutpat nec in orci. Morbi dictum quam vel mi tempus efficitur. Aenean id tellus tempus, vehicula neque eu, bibendum ipsum",
+      "link": "/result/link.html"
+    },
+    {
+      "title": "Result Title 3",
+      "description": "Result Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo dolor. Proin nec placerat ligula. Praesent vitae ligula eu tortor euismod volutpat nec in orci. Morbi dictum quam vel mi tempus efficitur. Aenean id tellus tempus, vehicula neque eu, bibendum ipsum",
+      "link": "/result/link.html"
+    }
+  ]
+}
