@@ -1,0 +1,10 @@
+htdocs/src/vendor
+htdocs/npm_modules
+htdocs/node_modules
+htdocs/.sass-cache
+htdocs/npm-debug.log
+
+htdocs/app/scripts/
+htdocs/app/styles/
+htdocs/app/fonts/
+.idea/
