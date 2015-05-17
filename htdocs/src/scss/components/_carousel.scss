@@ -1,0 +1,18 @@
+.carousel .item {
+  height: 100%;
+}
+
+#myCarousel {
+  max-width: 900px;
+  margin: 0 15% 0 15%;
+}
+
+#xclusiveCircle {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  height: 100%;
+  width: 65%;
+  background: url(/images/circleX.png) no-repeat;
+  z-index: -1;
+}
