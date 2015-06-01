@@ -13,9 +13,10 @@
 @import "form-control";
 @import "extend-vars";
 @import "global-classes";
+@import "bootstrap-overrides";
 
 // Padding for the content below the fixed header.
-// Variables set in variables/index file. 
+// Variables set in variables/index file.
 .content {
   @include breakpoint(small) {
     padding-top: $header-height-mobile;

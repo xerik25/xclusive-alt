@@ -1,0 +1,53 @@
+.aboutUs__ourLeaders{
+  min-height: 500px;
+
+  @media(min-width: 992px){
+    -webkit-background-size: cover;
+    background-size: cover;
+    background: url(/images/aboutus_background.jpg) no-repeat;
+  }
+}
+
+.aboutUs__grayBar{
+  background-color: gray;
+}
+
+.aboutUs__ownerProfile{
+  width: 283px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  &:hover{
+    background-color: #9fda4b;
+  }
+}
+.aboutUs__ownerImages{
+  height: 230px;
+  width: 283px;
+
+  &--cody{
+    background: url(/images/aboutus_cody-bw.jpg) no-repeat white;
+
+    &:hover{
+      background: url(/images/aboutus_cody-c.jpg) no-repeat white;
+    }
+  }
+  &--aharon{
+    background: url(/images/aboutus_aharon-bw.jpg) no-repeat white;
+
+    &:hover{
+      background: url(/images/aboutus_aharon-c.jpg) no-repeat white;
+    }
+  }
+  &--crystal{
+    background: url(/images/aboutus_crystal-bw.jpg) no-repeat white;
+
+    &:hover{
+      background: url(/images/aboutus_crystal-c.jpg) no-repeat white;
+    }
+  }
+}
+
+.aboutUs__ownerText{
+  padding: 10px;
+}
