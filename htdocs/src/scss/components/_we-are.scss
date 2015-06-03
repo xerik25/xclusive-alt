@@ -1,9 +1,16 @@
 #weAre {
+  background-color: #2D2B2A;
 }
-#weAre h2 {
+.whiteBar {
   background-color: white;
   opacity: 0.5;
+
+  h2{
+    padding: 0 17px;
+  }
 }
-#weAre .weAreMain {
-  margin: 0% 5% 0% 5%;
+
+.weAreMain{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
