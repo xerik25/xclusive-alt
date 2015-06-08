@@ -17,4 +17,19 @@
 
 .contactUs__socialBar{
   background-color: gray;
+  text-align: center;
+  padding: 20px;
+}
+
+.contactUs__socialText{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contactUs__socialImages{
+  display: inline-block;
+
+  img{
+    margin-right: 5px;
+  }
 }
