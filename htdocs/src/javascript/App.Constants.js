@@ -31,3 +31,6 @@ App.Constants.Search = {
 };
 
 _.templateSettings = App.Constants.Config.TemplateSettings;
+
+
+

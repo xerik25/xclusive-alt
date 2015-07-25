@@ -7,18 +7,18 @@ page_name: home
     <div class="text-uppercase">Contact Us <span class="contactUs__andSign">&</span></div>
     <div>Let us pour your next drink!</div>
     <div>Serving Wichita and Kansas areas</div>
-    <form class="contactUs__submitForm">
+    <form class="contactUs__submitForm js-submitContactForm" action="/contact">
       <div class="form-group">
         <label for="submitForm__name">Name</label>
-        <input type="text" class="form-control" id="sumbmitForm__name" placeholder="Enter Name">
+        <input type="text" class="form-control" id="submitForm__name" placeholder="Enter Name">
       </div>
       <div class="form-group">
         <label for="submitForm__company">Company</label>
-        <input type="text" class="form-control" id="sumbmitForm__company" placeholder="Enter Company">
+        <input type="text" class="form-control" id="submitForm__company" placeholder="Enter Company">
       </div>
       <div class="form-group">
         <label for="submitForm__phone">Phone</label>
-        <input type="text" class="form-control" id="sumbmitForm__phone" placeholder="Enter Phone">
+        <input type="text" class="form-control" id="submitForm__phone" placeholder="Enter Phone">
       </div>
       <div class="form-group">
         <label for="submitForm__email">Email address</label>
@@ -33,7 +33,7 @@ page_name: home
         </p>
       </div>
       <div class="form-group">
-        <textarea class="form-control" rows="5"></textarea>
+        <textarea class="form-control" id="submitForm__notes" rows="5"></textarea>
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
@@ -54,3 +54,5 @@ page_name: home
       </div>
   </div>
 </div>
+
+
