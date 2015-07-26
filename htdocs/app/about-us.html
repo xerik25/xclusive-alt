@@ -112,30 +112,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script>
-			// TODO: MOVE THIS
-			//js-submitContactForm
-			$(".js-submitContactForm").submit(function(event) {
-				// Stop form from submitting normally
-				event.preventDefault();
-				var options = {};
-				// TODO: Scrape proper props from form and post object formatted correctly
-				// TODO: Set up node server to accept POST and hit sendgrid API
-				// Get some values from elements on the page:
-				var $form = $(this),
-					fields = $form.find("input, textarea"),
-					url = $form.attr("action");
-				// Send the data using post
-				$.each(fields, function(i, field) {
-					var prop = field.id.split("submitForm__")[1];
-					options[prop] = $(field).val();
-				});
-				var posting = $.post(url, options);
-				// Put the results in a div
-				posting.done(function(data) {
-					var content = $(data).find("#content");
-					$("#result").empty().append(content);
-				});
-			});
 		</script>
 		<div class="footer row">
 			<div class="maxWidth">
