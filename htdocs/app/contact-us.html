@@ -97,10 +97,8 @@
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
 					$(".js-submitContactForm").submit(function(event) {
-						// Stop form from submitting normally
 						event.preventDefault();
 						var options = {};
-						// TODO: Set up node server to accept POST and hit sendgrid API
 						// Get some values from elements on the page:
 						var $form = $(this),
 							fields = $form.find("input, textarea"),
@@ -110,7 +108,6 @@
 							options[prop] = $(field).val();
 						});
 						var posting = $.post('http://localhost:3000/test', options);
-						// Put the results in a div
 						posting.done(function(data) {
 							console.log('You posted succesfully. ', data);
 						});
