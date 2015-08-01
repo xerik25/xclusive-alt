@@ -107,7 +107,7 @@
 							var prop = field.id.split("submitForm__")[1];
 							options[prop] = $(field).val();
 						});
-						var posting = $.post('http://localhost:3000/test', options);
+						var posting = $.post('/contact-us', options);
 						posting.done(function(data) {
 							console.log('You posted succesfully. ', data);
 						});
