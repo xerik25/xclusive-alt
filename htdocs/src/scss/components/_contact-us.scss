@@ -5,9 +5,16 @@
 
 }
 
+.contactUs__container{
+  position: relative;
+
+  @include breakpoint(tablet){
+    padding-top: 100px;
+  }
+}
+
 .contactUs__greenBox{
   background: #9fda4b;
-  margin-top: 100px;
 }
 
 .contactUs__andSign{
@@ -15,10 +22,21 @@
   color: gray;
 }
 
+.contactUs__downloadMenuContainer{
+
+  @include breakpoint(tablet){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+  }
+}
+
 .contactUs__socialBar{
   background-color: gray;
   text-align: center;
   padding: 20px;
+  margin: 20px 0;
 }
 
 .contactUs__socialText{
