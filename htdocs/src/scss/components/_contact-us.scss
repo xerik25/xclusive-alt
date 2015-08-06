@@ -28,7 +28,19 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    color: black;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+  }
+}
+
+.contactUs__downloadMenuBlock{
+
+  @include breakpoint(tablet){
+    padding-left: 40px;
+  }
+
+  img{
+    border: black solid 1px;
   }
 }
 
@@ -36,7 +48,11 @@
   background-color: gray;
   text-align: center;
   padding: 20px;
-  margin: 20px 0;
+  margin-top: 20px;
+
+  @include breakpoint(tablet){
+    margin-top: 140px;
+  }
 }
 
 .contactUs__socialText{
@@ -50,4 +66,8 @@
   img{
     margin-right: 5px;
   }
+}
+
+.contactUs__submitForm .form-group{
+  padding: 10px;
 }

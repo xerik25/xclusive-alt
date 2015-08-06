@@ -3,7 +3,7 @@ layout: master.hbs
 page_name: home
 ---
 <div class="contactUs row">
-  <div class="contactUs__container col-xs-12">
+  <div class="contactUs__container clearfix">
     <div class="contactUs__greenBox col-xs-12 col-sm-offset-1 col-sm-4">
       <div class="text-uppercase">Contact Us <span class="contactUs__andSign">&</span></div>
       <div>Let us pour your next drink!</div>
@@ -43,11 +43,15 @@ page_name: home
       <div>Give us a call at 316.555.5555</div>
     </div>
     <div class="contactUs__downloadMenuContainer col-xs-12 col-sm-7">
-      <div>Our Menu<span>Download it...</span></div>
-      <img src="/images/menu-preview.png">
+      <div class="contactUs__downloadMenuBlock">
+        <div>Our Menu<span>Download it...</span></div>
+        <a href="#">
+          <img src="/images/menu-preview.png">
+        </a>
+      </div>
     </div>
   </div>
-  <div class="contactUs__socialBar col-xs-12">
+  <div class="contactUs__socialBar col-xs-12 col-sm-offset-1 col-sm-10">
       <p class="contactUs__socialText">Connect with us for the latest photos, events, and decor!</p>
       <div class="contactUs__socialImages">
         <a href="https://instagram.com/xevents/" target="_blank"><img src="/images/instagram.png"></a>
