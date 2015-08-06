@@ -41,6 +41,7 @@
     "koa": "^0.21.0",
     "koa-cors": "0.0.16",
     "koa-router": "^5.1.2",
-    "koa-static": "^1.4.9"
+    "koa-static": "^1.4.9",
+    "sendgrid": "^1.9.2"
   }
 }
