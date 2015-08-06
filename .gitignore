@@ -4,5 +4,8 @@ htdocs/node_modules
 htdocs/.sass-cache
 htdocs/npm-debug.log
 
-htdocs/app/
+htdocs/app/*.html
+htdocs/app/scripts/
+htdocs/app/styles/
+htdocs/app/fonts/
 .idea/
