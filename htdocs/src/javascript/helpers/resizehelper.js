@@ -13,6 +13,6 @@ App.Helpers.resizeHelper = function (feature) {
     feature.emit('resize:tablet');
   }
 
-  $.subscribe('resize', onResize);
+  //$.subscribe('resize', onResize);
   return feature;
 };
