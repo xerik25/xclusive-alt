@@ -1,5 +1,5 @@
 .venues {
-  height: 600px;
+  height: 500px;
   background-size: cover !important;
 
   &--airCapital{background: url(/images/air_captial_background.jpg) no-repeat white;}
@@ -17,7 +17,7 @@
   &--boathouse{background: url(/images/boathouse_background.jpg) no-repeat white;}
 
   &__titleHeader{
-    margin-top:215px;
+    margin-top:180px;
     background-color: white;
     padding: 0 30px;
   }
