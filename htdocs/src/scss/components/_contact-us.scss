@@ -23,6 +23,8 @@
 }
 
 .contactUs__downloadMenuContainer{
+  text-align: center;
+  margin: 2em 0;
 
   @include breakpoint(tablet){
     position: absolute;
@@ -30,6 +32,8 @@
     right: 0;
     color: white;
     text-shadow: black 1px 1px 1px;
+    text-align: left;
+    margin: 0;
   }
 }
 
