@@ -80,12 +80,17 @@
       background: url("http://placehold.it/200x200/ff0000");
     }
   }
+  
   &--2{
     background: url("http://placehold.it/200x200/000000");
 
     &:hover{
       background: url("http://placehold.it/200x200/0000ff");
     }
+  }
+
+  img{
+    display: block;
   }
 }
 
