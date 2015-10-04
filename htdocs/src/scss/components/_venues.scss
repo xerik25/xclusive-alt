@@ -2,8 +2,6 @@
   height: 500px;
   background-size: cover !important;
 
-  &--airCapital{background: url(/images/air_captial_background.jpg) no-repeat white;}
-  &--worldTreasures{background: url(/images/world_treasures_background.jpg) no-repeat white;}
   &--tanganyika{
     background: url(/images/tanganyika_background.jpg) no-repeat white;
 
@@ -11,6 +9,17 @@
       background-position: -600px 0;
     }
   }
+
+  &--studio420{
+    background: url(/images/studio420.jpg) no-repeat white;
+
+    @media(min-width: 768px){
+      background-position: 0 -300px;
+    }
+  }
+
+  &--airCapital{background: url(/images/air_captial_background.jpg) no-repeat white;}
+  &--worldTreasures{background: url(/images/world_treasures_background.jpg) no-repeat white;}
   &--indianCenter{background: url(/images/indian_center_background.jpg) no-repeat white;}
   &--botanica{background: url(/images/botanica_background.jpg) no-repeat white;}
   &--explorationPlace{background: url(/images/exploration_place_background.jpg) no-repeat white;}
@@ -26,5 +35,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 30px 20px 30px;
     margin-bottom: 20px;
+  }
+
+  p{
+    font-size: 16px;
   }
 }
