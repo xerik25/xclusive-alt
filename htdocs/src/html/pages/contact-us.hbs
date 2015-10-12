@@ -8,7 +8,7 @@ page_name: home
       <div class="text-uppercase">Contact Us <span class="contactUs__andSign">&</span></div>
       <div>Let us pour your next drink!</div>
       <div>Serving Wichita and Kansas areas</div>
-      <form class="contactUs__submitForm js-submitContactForm" action="/contact">
+      <form class="contactUs__submitForm js-submitContactForm">
         <div class="form-group">
           <label for="submitForm__name">Name</label>
           <input type="text" class="form-control" id="submitForm__name" placeholder="Enter Name" required>
@@ -86,11 +86,14 @@ page_name: home
         options[prop] = $(field).val();
       });
 
-      var posting = $.post('/contact-us', options);
+      var posting = $.post('http://45.55.250.111:3001/contact-us', options);
 
       posting.done(function(data) {
-        var contactForm = $('.contactUs__submitForm');
-        contactForm.html('<h2>Thanks for contacting us!</h2><h4>We will get back with you as soon as possible!</h4>')
+        var $contactForm = $('.contactUs__submitForm');
+        $contactForm.html('<h2>Thanks for contacting us!</h2><h4>We will get back with you as soon as possible!</h4>');
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
       }).fail(function(err){
         alert('There has been a problem communicating with the server. Please try again.')
       });
