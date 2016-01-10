@@ -45,8 +45,54 @@
         <![endif]-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script>
 
+        <script>
+          //TODO: This JS needs to be moved
+          //Make anchor slow scroll
+          $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+          //For send email
+          document.addEventListener("DOMContentLoaded", function() {
+            $(".js-submitContactForm").submit(function(event) {
+              event.preventDefault();
+
+              var options = {};
+
+              // Get some values from elements on the page:
+              var $form = $(this);
+              var fields = $form.find("input, textarea");
+
+              $.each(fields, function(i, field){
+                var prop = field.id.split("submitForm__")[1];
+                options[prop] = $(field).val();
+              });
+
+              var posting = $.post('http://45.55.250.111:3001/contact-us', options);
+
+              posting.done(function(data) {
+                var $contactForm = $('.contactUs__submitForm');
+                $contactForm.html('<h2>Thanks for contacting us!</h2><h4>We will get back with you as soon as possible!</h4>');
+                $('html, body').animate({
+                  scrollTop: $('#contactUs').offset().top
+                }, 1000);
+
+              }).fail(function(err){
+                alert('There has been a problem communicating with the server. Please try again.')
+              });
+            });
+          });
         </script>
         {{> footer }}
     </body>

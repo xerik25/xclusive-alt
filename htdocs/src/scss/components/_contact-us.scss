@@ -75,3 +75,21 @@
 .contactUs__submitForm .form-group{
   padding: 10px;
 }
+
+.submitForm__button {
+  float: right;
+  background: black;
+  color: white;
+  margin: 10px;
+}
+
+.submitForm__phoneRow {
+  margin-top: 60px;
+  padding: 10px 10px 30px 10px;
+}
+
+.submitForm__phoneRowText {
+  position: absolute;
+  left: 85px;
+  bottom: 25px;
+}
